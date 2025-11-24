@@ -194,7 +194,7 @@ if __name__ == "__main__":
         if phy_out.exists():
             shutil.rmtree(phy_out)
 
-        export_to_phy(sorting_analyzer=analyzer, output_folder=phy_out, compute_pc_features=False, compute_amplitudes=False, use_relative_path=True, additional_properties = ["KSLabel","default_qc","decoder_label","decoder_probability"])
+        export_to_phy(sorting_analyzer=analyzer, output_folder=phy_out, compute_pc_features=True, compute_amplitudes=True, use_relative_path=True, additional_properties = ["KSLabel","default_qc","decoder_label","decoder_probability"])
         print(f"\tExported Phy project to: {phy_out}")
 
         # update analyzer properties
